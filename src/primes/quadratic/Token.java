@@ -24,6 +24,12 @@ class Token extends primes.erathostenes.Token {
 	// setters
 	public void Set(BigInteger n) {
 		super.Set(n) ;
+		//this.safenum = n;
+		this.primality = true ;
+	}
+	
+	public void Reset(BigInteger n) {
+		super.Set(n) ;
 		this.safenum = n;
 		this.primality = true ;
 	}
@@ -40,6 +46,4 @@ class Token extends primes.erathostenes.Token {
 	boolean primality() {
 		return this.primality;
 	}
-
-
 }

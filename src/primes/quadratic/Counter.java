@@ -22,7 +22,7 @@ public 	Token token() {
 
 
 public Token get() {
-		this.token().Set(this.value());
+		this.token().Reset(this.value());
 		this.set() ;
 		
 		return this.token() ;
