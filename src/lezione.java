@@ -3,7 +3,7 @@
  * @author Marco Pedicini
  **/
 
-import primes.goldbach.Sieve ;
+import primes.quadratic.Sieve ;
 
 public class lezione {
 	
@@ -12,7 +12,7 @@ public class lezione {
 		
 		lista = new Sieve(args) ;
 	// test
-//		lista.printmatrix();
+	lista.printmatrix();
 		
 		return ;
 	}
