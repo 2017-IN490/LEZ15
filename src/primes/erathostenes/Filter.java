@@ -7,9 +7,11 @@ public class Filter extends primes.Filter<Token> {
  //private BigInteger prime ;
 
     // costruttori
-public Filter(Item<Token> tail, BigInteger p ) {
+
+ public Filter(Item<Token> tail, BigInteger p ) {
 	super (tail,p) ;
     }
+	
 
 /*
  // setters

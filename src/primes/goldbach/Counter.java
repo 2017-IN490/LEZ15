@@ -5,6 +5,7 @@ import java.math.BigInteger ;
 class Counter extends primes.Counter<Token> {
 private Sieve sieve;
     // costruttori
+
 public Counter(Sieve sieve) {
 		super(new Token());
 		this.sieve = sieve;

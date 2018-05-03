@@ -30,26 +30,8 @@ private    BigInteger euler ;
 */
 	
  
-public	abstract boolean testloop(T token) ;
-/*	{
-		return ( token.value().compareTo(this.maxprime) != 1) ;
-	}
-*/
-
+public abstract	boolean testloop(T token) ;
 public abstract void mainloop() ;
-/*	{
-		T token ;
-		
-		token = next.get() ;
-		
-		while (testloop(token)) {
-			this.euler = this.euler.add(BigInteger.ONE) ;
-			this.set( new Filter(this.next , token.value() ));
-			token = this.next.get() ;
-		};
-		
-	}
-*/
 	
 	// setters
 	public void setmax(BigInteger max) {

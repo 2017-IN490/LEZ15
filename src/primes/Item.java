@@ -36,7 +36,7 @@ int length() {
 		return i;
 	}
 	
-public	Item next() {
+public	Item<T> next() {
 		return next ;
 	}
 	

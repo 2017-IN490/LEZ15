@@ -9,11 +9,16 @@ class Filter extends primes.Filter<Token> {
 		super(tail,p) ;
     }
 
-private boolean	test(Token t) {
+	private boolean testprime(Token t){
+		return (t.value().mod(this.value()).compareTo(BigInteger.ZERO) == 0) ;
+		
+	}
+	
+public boolean test(Token t) {
 		if (t.parity())
 			return this.testgoldbach(t) ;
 		else
-			return super.test(t) ;
+			return this.testprime(t) ;
 	}
 	
 private boolean testgoldbach(Token t) {

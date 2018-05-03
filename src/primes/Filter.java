@@ -7,12 +7,12 @@ public abstract class Filter<T> extends Item<T> {
 
     // costruttori
 public Filter(Item<T> tail, BigInteger p ) {
-	System.out.println("new erathostenes Filter");
+	System.out.println("new primes Filter");
 	this.Set(tail,p) ;
     }
 
     // setters
-private void Set(Item<T> tail, BigInteger p) {
+public void Set(Item<T> tail, BigInteger p) {
 	this.prime = p ;
 	super.set(tail) ;
     }

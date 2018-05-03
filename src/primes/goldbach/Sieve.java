@@ -13,12 +13,12 @@ public Sieve(String[] args) {
 
 	}
 	
-private boolean testloop(Token token) {
+public boolean testloop(Token token) {
 		return (( token.value().compareTo(this.getmax()) != 1) && (!token.parity())) ;
 	}
 	
 	
-private void mainloop() {
+public void mainloop() {
 		Token token ;
 			//System.out.println("in main loop - before the first get");
 		token = (Token) this.next().get() ;
@@ -30,6 +30,8 @@ private void mainloop() {
 		};
 		
 	}
-
-
+	
+public Token get() {
+		return null ;
+	}
 }
