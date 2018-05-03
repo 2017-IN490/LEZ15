@@ -34,13 +34,13 @@ public void print() {
 	}
 */
 	 
-	 public Token get()	 
+	 public Token get()
 	 {
 	 
-	 this.tok.Set(this.count);
+	 this.token().Set(this.value());
 	 this.set() ;
 	 
-	 return tok ;
+	 return this.token() ;
 	 }
 
 /*

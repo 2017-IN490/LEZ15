@@ -36,8 +36,7 @@ public	abstract boolean testloop(T token) ;
 	}
 */
 
-
-	public abstract void mainloop() ;
+public abstract void mainloop() ;
 /*	{
 		T token ;
 		

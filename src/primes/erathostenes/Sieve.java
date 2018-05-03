@@ -20,7 +20,7 @@ public Sieve(String[] args, Item<Token> next) {
 	}
 	
 	public Sieve(String[] args) {
-		this(args, new Counter<Token>()) ;
+		this(args, new Counter()) ;
 		System.out.println("new erathostenes Sieve with string args");
 		
 		this.mainloop();
@@ -28,16 +28,16 @@ public Sieve(String[] args, Item<Token> next) {
 	}
 	
 public	boolean testloop(Token token) {
-		return ( token.value().compareTo(this.maxprime) != 1) ;
+		return ( token.value().compareTo(this.getmax()) != 1) ;
 	}
 	
-private void mainloop() {
+public void mainloop() {
 		Token token ;
 		
 		token = next.get() ;
 		
 		while (testloop(token)) {
-			this.euler = this.euler.add(BigInteger.ONE) ;
+			this.seteuler() ;
 			this.set( new Filter(this.next , token.value() ));
 			token = this.next.get() ;
 		};

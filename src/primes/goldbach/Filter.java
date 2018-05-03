@@ -3,7 +3,7 @@ package primes.goldbach ;
 import java.math.BigInteger ;
 import primes.Item ;
 
-class Filter extends primes.erathostenes.Filter {
+class Filter extends primes.Filter<Token> {
 // costruttori
 	Filter(Item<Token> tail, BigInteger p ) {
 		super(tail,p) ;

@@ -2,7 +2,7 @@ package primes.goldbach ;
 
 import java.math.BigInteger ;
 
-public class Sieve extends primes.erathostenes.Sieve {
+public class Sieve extends primes.Sieve<Token> {
 
     // costruttori
 public Sieve(String[] args) {
