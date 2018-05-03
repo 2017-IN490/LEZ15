@@ -1,23 +1,22 @@
-package primes.erathostenes ;
+package primes ;
 
 import java.math.BigInteger ;
-import primes.Item ;
 
-public class Filter extends primes.Filter<Token> {
- //private BigInteger prime ;
+public abstract class Filter<T> extends Item<T> {
+ private BigInteger prime ;
 
     // costruttori
-public Filter(Item<Token> tail, BigInteger p ) {
-	super (tail,p) ;
+public Filter(Item<T> tail, BigInteger p ) {
+	System.out.println("new erathostenes Filter");
+	this.Set(tail,p) ;
     }
 
-/*
- // setters
-private void Set(Item<Token> tail, BigInteger p) {
+    // setters
+private void Set(Item<T> tail, BigInteger p) {
 	this.prime = p ;
 	super.set(tail) ;
     }
- 
+
     // getters
 public void print() {
 		
@@ -26,25 +25,31 @@ public void print() {
 		this.next.print() ;
 		
 	}
-*/
-public boolean test(Token t) {
+
+public abstract boolean test(T t) ;
+	
+	/*
+	 {
 		return (t.value().mod(this.value()).compareTo(BigInteger.ZERO) == 0) ;
 	}
+*/
 	
-public Token get() {
+	
+public abstract T get() ;
+	/*
 		Token token;
 		token=this.next.get() ;
 		while (test(token)) token=next.get();
 		return token;
 
-	}
+	}*/
 	
 	
-/*public	BigInteger value() {
+public	BigInteger value() {
 		return this.prime ;
 		
 	}
-*/
+
 }
 
 

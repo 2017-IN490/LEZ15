@@ -2,7 +2,7 @@ package primes.erathostenes ;
 
 import java.math.BigInteger ;
 import primes.Item;
-public class Sieve extends Sieve<Token> {
+public class Sieve extends primes.Sieve<Token> {
 //private    BigInteger maxprime ;
 //private    BigInteger euler ;
 

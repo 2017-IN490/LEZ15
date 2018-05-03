@@ -17,10 +17,10 @@ private    T tok;
 		super(token);
 	}
 	
-	public Counter(Sieve<Token> sieve) {
+/*	public Counter(Sieve sieve) {
 		super(sieve);
 	}
-
+*/
 	/*
     // setters
 public	void set() {
@@ -34,8 +34,7 @@ public void print() {
 	}
 */
 	 
-	 public Token get() ;
-	 
+	 public Token get()	 
 	 {
 	 
 	 this.tok.Set(this.count);

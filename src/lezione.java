@@ -3,7 +3,7 @@
  * @author Marco Pedicini
  **/
 
-import primes.goldbach.Sieve ;
+import primes.erathostenes.Sieve ;
 
 public class lezione {
 	
