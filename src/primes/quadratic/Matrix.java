@@ -22,7 +22,7 @@ private	Item<Token> nextrow ;
        @param e il valore intero da inserire nella matrice
     */
 
-	Matrix(Item n, Item<Token> nrow, BigInteger e) {
+	Matrix(Item<Token> n, Item<Token> nrow, BigInteger e) {
 		super(n) ;
 		
 		//System.out.println("constructing Matrix object: next = "+n+" column = "+nrow+" entry = "+e);

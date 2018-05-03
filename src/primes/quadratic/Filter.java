@@ -36,13 +36,18 @@ Filter(Item<Token> tail, BigInteger p) {
 		System.out.println(" fine creazione filtro ");
 	}
 
-private Item setzerocolumn(Item r) {
+private Item<Token> setzerocolumn(Item r) {
 		if (((Matrix)r).column() != null)
 			return (new Matrix(((Matrix)r).column(),this.setzerocolumn(((Matrix)r).column()),BigInteger.ZERO));
 		else
 			return null ;
 	}
 
+public boolean test(Token t) {
+		return (t.value().mod(this.value()).compareTo(BigInteger.ZERO) == 0) ;
+	}
+	
+	
 private Token factorize(Token tok) {
 		Item<Token> tmp;
 		
