@@ -1,17 +1,18 @@
 package primes.quadratic ;
 
 import java.math.BigInteger ;
-import primes.erathostenes.Item;
+import primes.Item;
+import primes.Bidimensional;
 
-class Filter extends primes.erathostenes.Filter implements Bidimensional {
+class Filter extends primes.Filter<Token> implements Bidimensional<Token> {
 	Matrix column ;
 	
 	
 // costruttori
-Filter(Item tail, BigInteger p) {
+Filter(Item<Token> tail, BigInteger p) {
 		super(tail,p) ;
 		
-		Item tmp;
+		Item<Token> tmp;
 		System.out.println(" new quadratic Filter "+" is token value = 2 ? "+p.compareTo(new BigInteger("2")));
 		
 		if( p.compareTo(new BigInteger("2")) == 0 )
@@ -43,7 +44,7 @@ private Item setzerocolumn(Item r) {
 	}
 
 private Token factorize(Token tok) {
-		Item tmp;
+		Item<Token> tmp;
 		
 		BigInteger exp = BigInteger.ZERO ;
 		
@@ -79,14 +80,14 @@ private Token factorize(Token tok) {
  */
 public Token get() {
 		Token token;
-		token=(Token)this.next().get() ;
+		token= this.next().get() ;
 		token = factorize(token);
 		return token;
 		
 	}
 	
 	
-public Item column () {
+public Item<Token> column () {
 		
 		return this.column ;
 	}

@@ -1,7 +1,7 @@
 package primes.quadratic ;
 import java.math.BigInteger;
 
-import primes.erathostenes.Item;
+//import primes.Item;
 
 //import primes.erathostenes.Token;
 public class Sieve extends primes.erathostenes.Sieve {

@@ -3,7 +3,7 @@ package primes.quadratic ;
 import java.math.BigInteger ;
 
 //import primes.erathostenes.Token;
-public class Counter extends primes.erathostenes.Counter {
+public class Counter extends primes.Counter<Token> {
 	
 
 public Counter() {
@@ -17,13 +17,15 @@ public Counter() {
 
 
 public 	Token token() {
-	return (Token) super.token();
+	return super.token();
 }
 
 
 public Token get() {
-	return (Token) super.get();
-	
+		this.token().Set(this.value());
+		this.set() ;
+		
+		return this.token() ;
 }
 
 }

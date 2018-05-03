@@ -35,7 +35,7 @@ public void print() {
 		System.out.println("C:"+this.count);
 	}
 	
-	public abstract	T get() ;
+public abstract	T get() ;
 	
 
 
